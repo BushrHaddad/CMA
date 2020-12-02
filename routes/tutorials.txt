@@ -1,0 +1,22 @@
+Eloquent model is used to access the database in oop manner.
+all its method could be accessed staticly. 
+-----------------
+Seeding 
+ - php artisan db: seed // will only seed your database with one record
+ ------------------------------
+
+ What is Model View Controller?
+ it is an architeture used to simplfiy things, divide their code into three parts: 
+ 1- View: that contain the theme.
+ 2- Controller: the logic that control data (Acquire and mainpulate data) and present data.
+ 3- Model: the part of the project that is repsonisble of database. Equivilant to a table in database.
+ Tables when used as models resemble object in oop.
+ ------------------------------------------
+ .env file: is responsible for linking with database
+ -------------------------------------------
+ What is composer?
+ composer is a dependency manager. composer install or composer update 
+ ---------------------------------------------
+.gitignore: this file contains the name of all the files that won't uploaded during git
+-------------------------------------------------------------------
+
