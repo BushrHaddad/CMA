@@ -24,7 +24,7 @@
     <meta name="twitter:url" content="" />
     <meta name="twitter:card" content="" />
 
-   
+
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
         rel="stylesheet">
 
@@ -46,21 +46,16 @@
 
     <!-- Modernizr JS -->
     <script src="/js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-    
 
-    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/lightslider.js"></script>
-    
+
 </head>
 
 <body>
 
-	<div class="fh5co-loader"></div>
+    <div class="fh5co-loader"></div>
 
     <div id="page">
         <nav class="fh5co-nav" role="navigation">
@@ -69,17 +64,26 @@
                     <div class="top-menu">
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm-2">
-                                    <ul class="fh5co-social-icons">
-                                        <li><a href="#"><i class="icon-search"></i></a></li>
-                                        <li><a href="#"><i class="icon-youtube-with-circle"></i></a></li>
-                                        <li><a href="#"><i class="icon-instagram-with-circle"></i></a></li>
-                                        <li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-10 menu-1">
+                                <div class="col-sm-12 menu-1" >
                                     <ul>
-                                        @yield('active_index')
+                                        <div class="col-sm-4">
+                                            <form id="form" class="row">
+                                                <div class="col-sm-4 field">
+                                                    <button class="btn btn-primary">@lang('titles.search')</button>
+                                                </div>
+
+                                                <div class="col-sm-8 field">
+                                                    <input type="text" name="query" placeholder="ابحث .."
+                                                        id="search-query" class="form-control">
+                                                </div>
+
+                                            </form>
+                                        </div>
+
+                                        <div class="col-sm-8">
+                                            @yield('active_index')
+                                        </div>
+
                                     </ul>
                                 </div>
 
@@ -89,7 +93,32 @@
                 </div>
 
             </div>
+
+            <script>
+            $(document).ready(function() {
+                var previousScroll = 0,
+                    headerOrgOffset = $('#mainnav').offset().top;
+
+                $(window).scroll(function() {
+                    var currentScroll = $(this).scrollTop();
+                    if (currentScroll > headerOrgOffset) {
+                        if (currentScroll > previousScroll) {
+                            $('#mainnav').fadeOut();
+                        } else {
+                            $('#mainnav').fadeIn();
+                            $('#mainnav').addClass('fixed');
+
+                        }
+                    } else {
+                        $('#mainnav').removeClass('fixed');
+                    }
+                    previousScroll = currentScroll;
+                });
+
+            });
+            </script>
         </nav>
+
 
         @yield('page_content')
 

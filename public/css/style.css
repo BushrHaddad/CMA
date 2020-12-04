@@ -121,6 +121,11 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #1d2f3b;
 }
 
+.fixed {
+  position: fixed;
+  z-index: 10;
+}
+
 .fh5co-nav .top-menu {
   padding: 12px 0;
   width: 100%;
@@ -141,7 +146,6 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 50px;
   margin: 0;
   font-weight: 700;
-  /* font-family: "Sacramento", cursive; */
   font-family: 'Tajawal', sans-serif;
   width: 150px;
   height: 150px;
@@ -1392,7 +1396,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .form-control {
   box-shadow: none;
   background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(209, 9, 9);
   height: 54px;
   font-size: 18px;
   font-weight: 300;
@@ -1400,8 +1404,12 @@ h1, h2, h3, h4, h5, h6, figure {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #1d2f3b;
 }
+/* Search input text  */
+.fh5co-nav .form-control{
+  height: 40px;
+}
+
 
 .row-pb-md {
   padding-bottom: 4em !important;
@@ -1816,3 +1824,5 @@ float: right;
   padding-right: 15px;
   padding-left: 15px;
 }
+
+

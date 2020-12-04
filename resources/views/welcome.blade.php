@@ -18,9 +18,9 @@
         <li><a href="#">تأملات</a></li>
     </ul>
 </li>
-<li><a href="about">من نحن</a></li>
 <li><a href="contact">تواصل</a></li>
 <li><a href="donate">تبرع</a></li>
+
 @endsection
 
 @section('page_content')
@@ -48,8 +48,7 @@
                                     <div class="col-md-10 col-md-offset-1 slider-text">
                                         <div class="slider-text-inner">
                                             <h1>Latest Resource </h1>
-                                            <h2>Resource Title, Church <a href="sermons"
-                                                    target="_blank">Watch</a></h2>
+                                            <h2>Resource Title, Church <a href="sermons" target="_blank">Watch</a></h2>
                                             <p class="ct"><a href="#">Learn More <i class="icon-arrow-right"></i></a>
                                             </p>
                                         </div>
@@ -247,7 +246,7 @@
                     <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
                 </li>
             </ul>
-      
+
         </div>
     </div>
 

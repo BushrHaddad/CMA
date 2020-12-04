@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,4 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/search', [SearchController::class, 'all'])->name('search');
