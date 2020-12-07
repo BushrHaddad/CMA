@@ -4,12 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Resource;
+use App\Product;
 
-class ResourceController extends Controller
+class ProductController extends Controller
 {
     public function index(){
-        $resources = Resource::all();
+        $products = Product::all();
     }
 
     public function create(){
@@ -43,11 +43,11 @@ class ResourceController extends Controller
 
     public function destroy($id){
         // delete a record using eloquent model
-        $resource = Resource::find($id);
-        $resource->delete();
+        // $Product::find($id);
+        // $Product->delete();
 
         // Another way
-        Resource::destroy($id);
+        // Product::destroy($id);
     }
 
 }

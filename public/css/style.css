@@ -124,6 +124,8 @@ h1, h2, h3, h4, h5, h6, figure {
 .fixed {
   position: fixed;
   z-index: 10;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .fh5co-nav .top-menu {
@@ -616,7 +618,6 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-about,
-#fh5co-content,
 #fh5co-started,
 #fh5co-blog,
 #home-churches,
@@ -625,6 +626,12 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 7em 0;
   clear: both;
 }
+
+#fh5co-content{
+  padding: 0em o;
+  clear: both
+}
+
 @media screen and (max-width: 768px) {
   #fh5co-about,
   #fh5co-content,
@@ -1396,7 +1403,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .form-control {
   box-shadow: none;
   background: transparent;
-  border: 2px solid rgb(209, 9, 9);
+  border: 2px solid black;
   height: 54px;
   font-size: 18px;
   font-weight: 300;
@@ -1408,6 +1415,7 @@ h1, h2, h3, h4, h5, h6, figure {
 /* Search input text  */
 .fh5co-nav .form-control{
   height: 40px;
+  border: 2px solid rgb(209, 9, 9);
 }
 
 
@@ -1825,4 +1833,6 @@ float: right;
   padding-left: 15px;
 }
 
-
+.map{
+  line-height: 0; 
+}

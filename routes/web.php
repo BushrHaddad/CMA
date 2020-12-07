@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SearchController;
+use App\Http\Controllers\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,20 +14,30 @@ use App\Http\Controllers\SearchController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// localization group
+
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+    ], function(){
+
+        // Index
+        Route::get('/', [IndexController::class, 'main'])->name('main');
+        
+        // Search Route
+        Route::post('/', [IndexController::class, 'search'])->name('search');
+
+        //edit
+        Route::get ('/edit/{id}', [IndexController::class, 'edit'])->name('edit');
+
+        // sermons
+        Route::get('/sermons', [IndexController::class, 'sermons'])->name('sermons');
+
+        // contact
+        Route::get('/contact', [IndexController::class, 'contact'])->name('contact');
+        
+        // About
+        Route::get('/about', [IndexController::class, 'about'])->name('about');
 });
 
-Route::get('/sermons', function () {
-    return view('sermons');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/search', [SearchController::class, 'all'])->name('search');

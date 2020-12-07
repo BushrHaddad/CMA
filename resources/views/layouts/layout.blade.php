@@ -7,12 +7,7 @@
     @yield('page_title')
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-    <meta name="keywords"
-        content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-    <meta name="author" content="freehtml5.co" />
-
-
-
+   
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="" />
     <meta property="og:image" content="" />
@@ -51,6 +46,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/lightslider.js"></script>
 
+
 </head>
 
 <body>
@@ -58,32 +54,27 @@
     <div class="fh5co-loader"></div>
 
     <div id="page">
-        <nav class="fh5co-nav" role="navigation">
+        <nav class="fh5co-nav" role="navigation" id="mainnav">
             <div class="container-fluid">
                 <div class="row">
                     <div class="top-menu">
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm-12 menu-1" >
+                                <div class="col-sm-12 menu-1">
                                     <ul>
                                         <div class="col-sm-4">
-                                            <form id="form" class="row">
-                                                <div class="col-sm-4 field">
-                                                    <button class="btn btn-primary">@lang('titles.search')</button>
-                                                </div>
-
-                                                <div class="col-sm-8 field">
-                                                    <input type="text" name="query" placeholder="ابحث .."
+                                            <form id="form" class="row" method="POST" action="{{route('search')}}">
+                                                @csrf
+                                                <div class="col-sm-12 field">
+                                                    <input type="text" placeholder="ابحث .." name="query"
                                                         id="search-query" class="form-control">
                                                 </div>
-
+                                                <!-- Search Button -->
                                             </form>
                                         </div>
-
                                         <div class="col-sm-8">
                                             @yield('active_index')
                                         </div>
-
                                     </ul>
                                 </div>
 
@@ -194,6 +185,8 @@
     <script src="/js/magnific-popup-options.js"></script>
     <!-- Main -->
     <script src="/js/main.js"></script>
+
+
 
 </body>
 

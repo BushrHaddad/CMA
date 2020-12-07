@@ -19,4 +19,4 @@ Seeding
  ---------------------------------------------
 .gitignore: this file contains the name of all the files that won't uploaded during git
 -------------------------------------------------------------------
-
+After changin the database, it's necessay to re-run the project.
