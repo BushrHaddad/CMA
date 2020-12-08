@@ -23,12 +23,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
         rel="stylesheet">
 
+
+
     <!-- Animate.css -->
     <link rel="stylesheet" href="/css/animate.css">
     <!-- Icomoon Icon Fonts-->
     <link rel="stylesheet" href="/css/icomoon.css">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="/css/bootstrap.css">
+
 
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="/css/magnific-popup.css">

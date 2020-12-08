@@ -33,6 +33,9 @@ Route::group(
 
         // sermons
         Route::get('/sermons', [IndexController::class, 'sermons'])->name('sermons');
+        
+        // articles
+        Route::get('/articles', [IndexController::class, 'articles'])->name('articles');
 
         // contact
         Route::get('/contact', [IndexController::class, 'contact'])->name('contact');

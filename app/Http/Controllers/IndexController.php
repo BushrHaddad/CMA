@@ -16,6 +16,9 @@ class IndexController extends Controller
     public function sermons(){
         return view('sermons');
     }
+    public function articles(){
+        return view('articles');
+    }
     public function contact(){
         return view('contact');
     }
