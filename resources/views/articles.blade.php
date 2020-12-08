@@ -32,7 +32,7 @@
 
             <div class="side animate-box col-md-3">
                 <div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
-                    <h2><span>Category</span></h2>
+                    <h2><span>مواضيع</span></h2>
                 </div>
                 <ul class="category">
                     <li><a href="#"><i class="icon-check"></i>Lifestyle</a></li>
@@ -45,10 +45,10 @@
             </div>
 
             <div class="col-md-9" id="sidebar">
+                
                 <div class="side animate-box">
-
                     <div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
-                        <h2><span>Latest Posts</span></h2>
+                        <h2><span>مقالات</span></h2>
                     </div>
                     
                     <div class="blog-entry">

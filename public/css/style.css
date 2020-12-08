@@ -711,6 +711,7 @@ h1, h2, h3, h4, h5, h6, figure {
   border: 1px solid #000;
   z-index: 8;
   position: relative;
+   
 }
 .fh5co-heading h2 span:after {
   position: absolute;
@@ -874,6 +875,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 6em;
   width: 100%;
   float: right;
+ 
 }
 #sidebar .blog-entry {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
