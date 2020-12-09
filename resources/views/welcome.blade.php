@@ -8,7 +8,7 @@
 <li class="active"><a href="/">الرئيسية</a></li>
 <li><a href="jesus">تعرف على يسوع</a></li>
 <li><a href="sermons">عظات</a></li>
-<li><a href="songs">ترانيم</a></li>
+<li><a href="hymns">ترانيم</a></li>
 <li><a href="articles">مقالات</a></li>
 <li class="has-dropdown">
     <a href="#">خدمات</a>

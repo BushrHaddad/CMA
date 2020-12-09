@@ -28,15 +28,21 @@ Route::group(
         // Search Route
         Route::post('/', [IndexController::class, 'search'])->name('search');
 
-        //edit
+        //edit resource
         Route::get ('/edit/{id}', [IndexController::class, 'edit'])->name('edit');
 
-        // sermons
-        Route::get('/sermons', [IndexController::class, 'sermons'])->name('sermons');
+        // All Sermons
+        Route::get('/sermons', [IndexController::class, 'all_sermons'])->name('sermons');
         
-        // articles
-        Route::get('/articles', [IndexController::class, 'articles'])->name('articles');
+        // All Articles
+        Route::get('/articles', [IndexController::class, 'all_articles'])->name('articles');
 
+        // All Hymns
+        Route::get('/hymns', [IndexController::class, 'all_hymns'])->name('hymns');
+       
+        // Show Resource
+        Route::get('/resource/{$id}', [IndexController::class, 'show_resource']);
+        
         // contact
         Route::get('/contact', [IndexController::class, 'contact'])->name('contact');
         
