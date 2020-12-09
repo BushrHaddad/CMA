@@ -14,8 +14,10 @@ class IndexController extends Controller
         return view('welcome');
     }
     
+    // get all sermons and pass them to sermons view
     public function all_sermons(){
-        return view('sermons');
+        $results = Product::where('s_list_id', '37')->paginate(4);
+        return view('sermons',compact('results')); 
     }
 
     // get all articles and pass them to articles view

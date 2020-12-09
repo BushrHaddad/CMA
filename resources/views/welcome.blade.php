@@ -83,8 +83,6 @@
                                     <li>Share:</li>
                                     <li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
                                     <li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
-                                    <li><a href="#"><i class="icon-linkedin-with-circle"></i></a></li>
-                                    <li><a href="#"><i class="icon-dribbble-with-circle"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -96,8 +94,9 @@
                 <div class="col-md-3">
                     <div class="side animate-box">
                         <div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
-                            <h2><span>Latest Posts</span></h2>
+                            <h2><span>مواضيع مميزة</span></h2>
                         </div>
+                        @for($i = 0 ; $i < 3 ; $i++)
                         <div class="blog-entry">
                             <a href="#">
                                 <img src="/imgs/blog-1.jpg" class="img-responsive" alt="">
@@ -107,36 +106,17 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="blog-entry">
-                            <a href="#">
-                                <img src="/imgs/blog-2.jpg" class="img-responsive" alt="">
-                                <div class="desc">
-                                    <span class="date">Dec. 25, 2016</span>
-                                    <h3>Most Beautiful Site in 2016</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="blog-entry">
-                            <a href="#">
-                                <img src="/imgs/blog-1.jpg" class="img-responsive" alt="">
-                                <div class="desc">
-                                    <span class="date">Dec. 25, 2016</span>
-                                    <h3>Most Beautiful Site in 2016</h3>
-                                </div>
-                            </a>
-                        </div>
+                        @endfor
+
                     </div>
                     <div class="side animate-box">
                         <div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
-                            <h2><span>Category</span></h2>
+                            <h2><span>عن</span></h2>
                         </div>
                         <ul class="category">
-                            <li><a href="#"><i class="icon-check"></i>Lifestyle</a></li>
-                            <li><a href="#"><i class="icon-check"></i>Web Development</a></li>
-                            <li><a href="#"><i class="icon-check"></i>Web Design</a></li>
-                            <li><a href="#"><i class="icon-check"></i>Nature</a></li>
-                            <li><a href="#"><i class="icon-check"></i>Life</a></li>
-                            <li><a href="#"><i class="icon-check"></i>Entertainment</a></li>
+                        @for($i = 0 ; $i< 5 ; $i++)
+                            <li><a href="#"><i class="icon-check"></i>موضوع</a></li>
+                        @endfor
                         </ul>
                     </div>
                 </div>
