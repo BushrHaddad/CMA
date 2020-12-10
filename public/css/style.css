@@ -46,12 +46,17 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  direction: rtl;
   color: #828282;
   margin: 0;
-  letter-spacing: .015em;
+  /* letter-spacing: .015em; */
   background: #fff;
   min-width: 230px;
+}
+.rtl{
+  direction: rtl;
+}
+.ltr{
+  direction: ltr;
 }
 
 #page {
@@ -129,7 +134,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav .top-menu {
-  padding: 12px 0;
+  padding: 15px 0;
   width: 100%;
   float: left;
   position: relative;
@@ -213,15 +218,15 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 5px 0 0 0;
 }
 .fh5co-nav ul li {
-  padding: 0;
+  padding:0;
   margin: 0;
   list-style: none;
   display: inline;
-  font-weight: 700;
+  font-weight: 600;
 }
 .fh5co-nav ul li a {
   font-size: 14px;
-  padding: 30px 15px;
+  padding: 30px 15px ;
   color: rgba(0, 0, 0, 0.7);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -314,6 +319,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75); 
 }
+
 /* Color for active index in header*/
 .fh5co-nav ul li.active > a {
   color: rgb(209, 9, 9) !important;
@@ -321,18 +327,18 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav ul li.active > a:before {
   position: absolute;
-  bottom: 11px;
+  bottom: 25px;
   left: 0;
   right: 0;
   content: '';
-  width: 40%;
-  height: 1px;
+  width: 50%;
+  height: 1.5px;
   margin: 0 auto;
   background: #000;
 }
 .fh5co-nav .fh5co-social-icons {
   text-align: left;
-  direction: ltr;
+  /* direction: ltr; */
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav .fh5co-social-icons {
@@ -702,7 +708,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 40px;
   margin-bottom: 20px;
   line-height: 1.5;
-  color: #000;
+  color: white;
   /* font-family: "Sacramento", cursive; */
   font-family: 'Tajawal', sans-serif;
 }
@@ -720,7 +726,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: -10px;
   right: 10px;
   content: '';
-  background: #fbf2eb;
+  background: rgb(114, 114, 114);
   z-index: -1;
 }
 .fh5co-heading p {

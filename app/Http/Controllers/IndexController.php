@@ -10,8 +10,14 @@ use App\Models\Product;
 class IndexController extends Controller
 {
 
+    public function __construct(){}
+    
     public function main(){
         return view('welcome');
+    }
+
+    public function jesus(){
+        return view ('resource');
     }
     
     // get all sermons and pass them to sermons view

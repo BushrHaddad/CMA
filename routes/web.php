@@ -30,7 +30,10 @@ Route::group(
 
         //edit resource
         Route::get ('/edit/{id}', [IndexController::class, 'edit'])->name('edit');
-
+        
+        // Know Jesus
+        Route::get('/jesus', [IndexController::class, 'jesus'])->name('jesus');
+        
         // All Sermons
         Route::get('/sermons', [IndexController::class, 'all_sermons'])->name('sermons');
         

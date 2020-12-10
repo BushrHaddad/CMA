@@ -5,21 +5,23 @@
 @endsection
 
 @section('active_index')
-<li><a href="/">الرئيسية</a></li>
-<li><a href="jesus">تعرف على يسوع</a></li>
-<li><a href="sermons">عظات</a></li>
-<li class="active"><a href="hymns">ترانيم</a></li>
-<li><a href="articles">مقالات</a></li>
+
+<li><a href="/">@lang('titles.main')</a></li>
+<li><a href="jesus">@lang('titles.know_jesus')</a></li>
+<li><a href="sermons">@lang('titles.sermons')</a></li>
+<li class="active"><a href="hymns">@lang('titles.hymns')</a></li>
+<li><a href="articles">@lang('titles.articles')</a></li>
 <li class="has-dropdown">
-    <a href="#">خدمات</a>
+    <a href="#">@lang('titles.other_services')</a>
     <ul class="dropdown">
-        <li><a href="#">أحداث مهمة</a></li>
-        <li><a href="#">كتب</a></li>
-        <li><a href="#">تأملات</a></li>
+        <li><a href="#">@lang('titles.events')</a></li>
+        <li><a href="#">@lang('titles.books')</a></li>
+        <li><a href="#">@lang('titles.devotions')</a></li>
     </ul>
 </li>
-<li><a href="contact">تواصل</a></li>
-<li><a href="donate">تبرع</a></li>
+<li><a href="about">@lang('titles.who_we_are')</a></li>
+<li><a href="contact">@lang('titles.contact')</a></li>
+<li><a href="donate">@lang('titles.donate')</a></li>
 
 @endsection
 
@@ -36,10 +38,10 @@
                     </div>
 
                     @foreach($results as $result)
-                      <div class="col-md-4">
+                    <div class="col-md-4">
                         <div class="fh5co-blog animate-box">
                             <div class="title text-center">
-                                <span class="posted-on">{{ date("m.d.y", strtotime($result->created_at) ) }}</span>
+                                <span class="posted-on">{{ date("m.d.y", strtotime($result->created_at)) }}</span>
                                 <h3><a href="#">{{$result->name}}</a></h3>
                             </div>
                             <a href="#"><img class="img-responsive" src="/imgs/blog-1.jpg" alt=""></a>
@@ -54,10 +56,10 @@
                     </div>
                     @endforeach
                 </div>
-               
+
             </div>
             <!-- Pagination -->
-        
+
         </div>
         {{$results->links()}}
     </div>

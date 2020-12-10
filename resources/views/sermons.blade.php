@@ -5,21 +5,22 @@
 @endsection
 
 @section('active_index')
-<li><a href="/">الرئيسية</a></li>
-<li><a href="jesus">تعرف على يسوع</a></li>
-<li class="active"><a href="sermons">عظات</a></li>
-<li><a href="hymns">ترانيم</a></li>
-<li><a href="articles">مقالات</a></li>
+<li><a href="/">@lang('titles.main')</a></li>
+<li><a href="jesus">@lang('titles.know_jesus')</a></li>
+<li class="active"><a href="sermons">@lang('titles.sermons')</a></li>
+<li><a href="hymns">@lang('titles.hymns')</a></li>
+<li><a href="articles">@lang('titles.articles')</a></li>
 <li class="has-dropdown">
-    <a href="#">خدمات</a>
+    <a href="#">@lang('titles.other_services')</a>
     <ul class="dropdown">
-        <li><a href="events">أحداث مهمة</a></li>
-        <li><a href="books">كتب</a></li>
-        <li><a href="devotions">تأملات</a></li>
+        <li><a href="#">@lang('titles.events')</a></li>
+        <li><a href="#">@lang('titles.books')</a></li>
+        <li><a href="#">@lang('titles.devotions')</a></li>
     </ul>
 </li>
-<li><a href="contact">تواصل</a></li>
-<li><a href="donate">تبرع</a></li>
+<li><a href="about">@lang('titles.who_we_are')</a></li>
+<li><a href="contact">@lang('titles.contact')</a></li>
+<li><a href="donate">@lang('titles.donate')</a></li>
 
 @endsection
 
@@ -63,19 +64,12 @@
                             </div>
 
                             <div class="card_body">
-                                <h2 class="card_body_title"> ماهي مكانتك في المسيح؟</h2>
-                                <div class="card_body_date">10/18/2020</div>
-                                <div class="card_body_subtitle">كلمة الله تقول أننا أبرار بفضل عمل المسيح على الصليب.
-                                    قديسين
-                                    مخلوقين ولادة جديدة.. هل تصدق هذا؟ وهل تعيش على أساس هذ تعيش على أ أساس هذ تعيش على
-                                    أ
-                                    أساس هذ تعيش على أساس هذه أساس هذ تعيش على أ أساس هذ تعيش على أساس هذه أساس هذ تعيش
-                                    على
-                                    أ أساس هذ تعيش على أساس هذه أساس هذ تعيش على أ أساس هذ تعيش على أساس هذه أساس هذ
-                                    تعيش
-                                    على أ أساس هذ تعيش على أساس هذه الحقيقة؟</div>
+                                <h2 class="card_body_title"> {{$result->name}} </h2>
+                                <div class="card_body_date"> {{ date("m.d.y", strtotime($result->created_at)) }} </div>
+                                <div class="card_body_subtitle"> {{$result->desc}} </div>
 
                             </div>
+                            
                             <div class="card_footer">
                                 <div class="card_author">
                                     <img alt="" class="card_author_image"

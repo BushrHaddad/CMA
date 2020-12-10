@@ -5,21 +5,23 @@
 @endsection
 
 @section('active_index')
-<li><a href="/">الرئيسية</a></li>
-<li><a href="jesus">تعرف على يسوع</a></li>
-<li><a href="sermons">عظات</a></li>
-<li><a href="hymns">ترانيم</a></li>
-<li class="active"><a href="articles">مقالات</a></li>
+
+<li><a href="/">@lang('titles.main')</a></li>
+<li><a href="jesus">@lang('titles.know_jesus')</a></li>
+<li><a href="sermons">@lang('titles.sermons')</a></li>
+<li><a href="hymns">@lang('titles.hymns')</a></li>
+<li class="active"><a href="articles">@lang('titles.articles')</a></li>
 <li class="has-dropdown">
-    <a href="#">خدمات</a>
+    <a href="#">@lang('titles.other_services')</a>
     <ul class="dropdown">
-        <li><a href="#">أحداث مهمة</a></li>
-        <li><a href="#">كتب</a></li>
-        <li><a href="#">تأملات</a></li>
+        <li><a href="#">@lang('titles.events')</a></li>
+        <li><a href="#">@lang('titles.books')</a></li>
+        <li><a href="#">@lang('titles.devotions')</a></li>
     </ul>
 </li>
-<li><a href="contact">تواصل</a></li>
-<li><a href="donate">تبرع</a></li>
+<li><a href="about">@lang('titles.who_we_are')</a></li>
+<li><a href="contact">@lang('titles.contact')</a></li>
+<li><a href="donate">@lang('titles.donate')</a></li>
 
 @endsection
 

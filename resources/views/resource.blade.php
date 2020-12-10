@@ -15,7 +15,7 @@
 
     <!-- Theme style  -->
     <link rel="stylesheet" href="/css/style.css">
-    
+
     <!-- Icomoon Icon Fonts-->
     <link rel="stylesheet" href="/css/icomoon.css">
 
@@ -155,44 +155,56 @@
     <footer id="fh5co-footer" role="contentinfo">
         <div class="container">
             <div class="row row-pb-md">
-                <div class="col-md-4 fh5co-widget">
-                    <h4>Paper</h4>
-                    <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta
-                        adipisci architecto culpa amet.</p>
+                <div class="col-md-4 text-center">
+                    <h4>@lang('titles.footer_verse_title')</h4>
+                    <p>@lang('titles.footer_verse')</p>
                 </div>
-                <div class="col-md-4 col-md-push-1">
+                <div class="col-md-4">
                     <ul class="fh5co-footer-links">
-                        <li><a href="jesus">تعرف على يسوع</a></li>
-                        <li><a href="about">من نحن</a></li>
-                        <li><a href="contact">تواصل</a></li>
-                        <li><a href="donate">تبرع</a></li>
+                        <li><a href="/">@lang('titles.main')</a></li>
+                        <li><a href="jesus">@lang('titles.know_jesus')</a></li>
+                        <li><a href="sermons">@lang('titles.sermons')</a></li>
+                        <li><a href="hymns">@lang('titles.hymns')</a></li>
+                        <li><a href="articles">@lang('titles.articles')</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">@lang('titles.other_services')</a>
+                            <ul class="dropdown">
+                                <li><a href="#">@lang('titles.events')</a></li>
+                                <li><a href="#">@lang('titles.books')</a></li>
+                                <li><a href="#">@lang('titles.devotions')</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about">@lang('titles.who_we_are')</a></li>
+                        <li class="active"><a href="contact">@lang('titles.contact')</a></li>
+                        <li><a href="donate">@lang('titles.donate')</a></li>
                     </ul>
                 </div>
 
-                <div class="col-md-4 col-md-push-1">
-                    <h4>Contact Information</h4>
+                <div class="col-md-4">
+                    <h4>@lang('titles.contact')</h4>
                     <ul class="fh5co-footer-links">
-                        <li>198 West 21th Street, <br> Suite 721 N ew York NY 10016</li>
-                        <li><a href="tel://1234567920">+ 1235 2355 98</a></li>
+                        <li>شارع أبو خليل القباني، دمشق - القصور</li>
+                        <li><a href="tel://1234567920">01111111111 </a></li>
                         <li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-                        <li><a href="http://freehtml5.co">FreeHTML5.co</a></li>
                     </ul>
                 </div>
 
             </div>
 
-            <div class="row copyright">
-                <div class="col-md-12 text-center">
+            <div class="row copyright text-center">
+                <div class="col-md-12">
                     <p>
-                        <small class="block">&copy; كنيسة الاتحاد المسيحي في سوريا ولبنان. All Rights
-                            Reserved.</small>
+                        <small class="block">@lang('titles.church_name')</small>
                     </p>
                     <p>
                     <ul class="fh5co-social-icons">
-                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                        <li><a href="#"><i class="icon-youtube"></i></a></li>
-                        <li><a href="#"><i class="icon-instagram"></i></a></li>
-                        <li><a href="#"><i class="icon-email"></i></a></li>
+                        <li><a href="https://www.facebook.com/EvangelicalChristainAllianceChurch"><i
+                                    class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCXaubVFH2Ahgd_Ovv-sf73w"><i
+                                    class="icon-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/cma.damascus/"><i class="icon-instagram"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/AllianceChurchM"><i class="icon-twitter"></i></a></li>
                     </ul>
                     </p>
                 </div>
@@ -200,6 +212,7 @@
 
         </div>
     </footer>
+    </div>
 
     <div class="gototop js-top">
         <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
@@ -220,6 +233,7 @@
     <script src="/js/magnific-popup-options.js"></script>
     <!-- Main -->
     <script src="/js/main.js"></script>
+
 
 
 </body>
