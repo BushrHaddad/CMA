@@ -29,5 +29,8 @@ return [
     "topics" => "Topics",
     "optional_first_name" => "ُEnter your Name (Optional)",
     "optional_last_name" => "Enter your Last Name (Optional)",
-    "send" => "Send"
+    "send" => "Send",
+    "location" => "Location",
+    
+    "main_church_address" => "Abo khalil Al Qabani, Qausor-Damascus",
 ];

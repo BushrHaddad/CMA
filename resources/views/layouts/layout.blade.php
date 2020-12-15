@@ -29,8 +29,19 @@
     <link rel="stylesheet" href="/css/animate.css">
     <!-- Icomoon Icon Fonts-->
     <link rel="stylesheet" href="/css/icomoon.css">
+
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="/css/bootstrap.css">
+
+    <!-- Vendor CSS Files -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet"> 
+
 
 
     <!-- Magnific Popup -->
@@ -45,9 +56,6 @@
     <!-- Modernizr JS -->
     <script src="/js/modernizr-2.6.2.min.js"></script>
 
-    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/lightslider.js"></script>
 
     @php
     $locale = App::getLocale();
@@ -81,8 +89,8 @@
                                             <form id="form" class="row" method="POST" action="{{route('search')}}">
                                                 @csrf
                                                 <div class="col-sm-12 field">
-                                                    <input type="text" placeholder="@lang('titles.search') ..." name="query"
-                                                        id="search-query" class="form-control">
+                                                    <input type="text" placeholder="@lang('titles.search') ..."
+                                                        name="query" id="search-query" class="form-control">
                                                 </div>
                                                 <!-- Search Button -->
                                             </form>
@@ -101,6 +109,7 @@
             </div>
 
             <script>
+
             $(document).ready(function() {
                 var previousScroll = 0,
                     headerOrgOffset = $('#mainnav').offset().top;
@@ -194,23 +203,32 @@
         <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
     </div>
 
+
     <!-- jQuery -->
     <script src="/js/jquery.min.js"></script>
+
     <!-- jQuery Easing -->
     <script src="/js/jquery.easing.1.3.js"></script>
+
     <!-- Bootstrap -->
     <script src="/js/bootstrap.min.js"></script>
+
     <!-- Waypoints -->
     <script src="/js/jquery.waypoints.min.js"></script>
+
     <!-- Flexslider -->
     <script src="/js/jquery.flexslider-min.js"></script>
+
     <!-- Magnific Popup -->
     <script src="/js/jquery.magnific-popup.min.js"></script>
     <script src="/js/magnific-popup-options.js"></script>
+
     <!-- Main -->
     <script src="/js/main.js"></script>
 
-
+    <!-- Related to Hero Carousal  -->
+    <!-- <script src="/vendor/jquery/jquery.min.js"></script>  -->
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

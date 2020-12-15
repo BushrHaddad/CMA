@@ -30,6 +30,8 @@ return [
     "topics" => "مواضيع",
     "optional_first_name" => "أدخل اسمك (اختياري)..",
     "optional_last_name" => "أدخل اسم عائلتك (اختياري)..",
-    "send" => "ارسال"
+    "send" => "ارسال",
+    "location" => "الموقع",
+    "main_church_address" => "شارع أبو خليل القباني, دمشق-القصور",
     
 ];
