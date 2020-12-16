@@ -25,10 +25,10 @@
 
 @section('page_content')
 
-<div id="fh5co-contact" class="fh5co-no-pd-top">
+<div id="CMA-contact" class="CMA-no-pd-top">
     <div class="container">
         <div class="row animate-box">
-            <div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
+            <div class="col-md-12 col-md-offset-0 text-center CMA-heading">
                 <h2><span>@lang('titles.contact_us')</span></h2>
             </div>
         </div>

@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('page_title')
+<!-- @section('page_title')
 <title>Alliance Church-Syria & Lebanon</title>
 @endsection
 
@@ -19,92 +19,77 @@
         <li><a href="#">@lang('titles.devotions')</a></li>
     </ul>
 </li>
-<li><a href="about">@lang('titles.who_we_are')</a></li>
-<li><a href="contact">@lang('titles.contact')</a></li>
-<li><a href="donate">@lang('titles.donate')</a></li>
 
-@endsection
+<li><a href="about">@lang('titles.who_we_are')</a></li>
+<li><a href="contact">@lang('titles.contact')</a></li> -->
+<!-- <li><a href="donate">@lang('titles.donate')</a></li> -->
+
+<!-- @endsection -->
 
 @section('page_content')
 
-<!-- ====== Hero Section ======= -->
-<section id="hero">
+<!-- ======= Hero Section ======= -->
+<section id="intro">
+    <div class="intro-container">
+        <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators"></ol>
 
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+            <div class="carousel-inner" role="listbox">
 
-        <div class="carousel-inner" role="listbox">
-
-            <!-- Slide 1 -->
-            <div class="carousel-item active" style="background-image: url(/imgs/slide1.jpg)">
-                <div class="carousel-container">
-                    <div class="container">
-                        <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Sailor</span></h2>
-                        <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
-                            Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
-                            Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et
-                            tempore modi architecto.</p>
-                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
-                            More</a>
+                <div class="carousel-item active" style="background-image: url(/imgs/slide2.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">We are professional</h2>
+                            <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.</p>
+                            <a href="#featured-services"
+                                class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Slide 2 -->
-            <div class="carousel-item" style="background-image: url(/imgs/slide2.jpg)">
-                <div class="carousel-container">
-                    <div class="container">
-                        <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                        <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
-                            Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
-                            Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et
-                            tempore modi architecto.</p>
-                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
-                            More</a>
+                <div class="carousel-item" style="background-image: url(/imgs/slide3.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">At vero eos et accusamus</h2>
+                            <p class="animate__animated animate__fadeInUp">Nam libero tempore, cum soluta nobis est
+                                eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus,
+                                omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut
+                                officiis debitis aut.</p>
+                            <a href="#featured-services"
+                                class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
-            <!-- Slide 3 -->
-            <div class="carousel-item" style="background-image: url(imgs/slide3.jpg)">
-                <div class="carousel-container">
-                    <div class="container">
-                        <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                        <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
-                            Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
-                            Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et
-                            tempore modi architecto.</p>
-                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
-                            More</a>
-                    </div>
-                </div>
-            </div>
+            <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
 
         </div>
-
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-
     </div>
-</section>
-<!-- ====== End Hero Section ====== -->
+</section><!-- End Hero Section -->
 
-<!-- Content -->
-<div id="fh5co-content">
+
+<!-- =========== Content Section ============= -->
+<div id="content">
     <div class="container">
         <div class="row">
             <div class="col-md-9 col-padded-right">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="fh5co-blog animate-box">
+                        <div class="CMA-blog animate-box">
                             <div class="title title-pin text-center">
                                 <span class="posted-on">Nov. 15th 2016</span>
                                 <h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
@@ -113,7 +98,7 @@
                             <a href="#"><img class="img-responsive" src="/imgs/blog-1.jpg" alt=""></a>
                             <div class="blog-text text-center">
                                 <p>Text here</p>
-                                <ul class="fh5co-social-icons">
+                                <ul class="CMA-social-icons">
                                     <li>Share:</li>
                                     <li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
                                     <li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
@@ -127,7 +112,7 @@
             <aside id="sidebar">
                 <div class="col-md-3">
                     <div class="side animate-box">
-                        <div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+                        <div class="col-md-12 col-md-offset-0 text-center CMA-heading CMA-heading-sidebar">
                             <h2><span>@lang('titles.featured')</span></h2>
                         </div>
                         @for($i = 0 ; $i < 3 ; $i++) <div class="blog-entry">
@@ -143,7 +128,7 @@
 
                 </div>
                 <div class="side animate-box">
-                    <div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+                    <div class="col-md-12 col-md-offset-0 text-center CMA-heading CMA-heading-sidebar">
                         <h2><span>@lang('titles.topics')</span></h2>
                     </div>
                     <ul class="category">
@@ -156,10 +141,10 @@
     </div>
 
 </div>
-<!-- End content -->
+<!-- ==========End content Section ===============-->
 
-<!-- Second Content -->
-<aside id="fh5co-hero">
+<!-- ============ Latest Section ============== -->
+<aside id="latest">
     <div class="container">
         <div class="row">
 
@@ -240,7 +225,7 @@
     </div>
     </div>
 </aside>
-<!-- End Second Content -->
+<!-- ============= End Latest Section ===============  -->
 
 <!-- Map Content -->
 <div id='map-churches' class='map'>

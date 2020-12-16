@@ -50,10 +50,10 @@
 	</head>
 	<body>
 		
-	<div class="fh5co-loader"></div>
+	<div class="CMA-loader"></div>
 	
 	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
+	<nav class="CMA-nav" role="navigation">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="top-menu">
@@ -77,7 +77,7 @@
 								</ul>
 							</div>
 							<div class="col-sm-5">
-								<ul class="fh5co-social-icons">
+								<ul class="CMA-social-icons">
 									<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
 									<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
 									<li><a href="#"><i class="icon-linkedin-with-circle"></i></a></li>
@@ -90,7 +90,7 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-12 text-center menu-2">
-					<div id="fh5co-logo">
+					<div id="CMA-logo">
 						<h1>
 							<a href="index.html">
 							Paper<span>.</span>
@@ -104,10 +104,10 @@
 	</nav>
 
 
-	<div id="fh5co-content" class="fh5co-no-pd-top">
+	<div id="CMA-content" class="CMA-no-pd-top">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
+				<div class="col-md-12 col-md-offset-0 text-center CMA-heading">
 					<h2><span>Our Blog</span></h2>
 				</div>
 			</div>
@@ -115,7 +115,7 @@
 				<div class="col-md-9 col-padded-right">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="fh5co-blog animate-box">
+							<div class="CMA-blog animate-box">
 								<div class="title title-pin text-center">
 									<span class="posted-on">Nov. 15th 2016</span>
 									<h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
@@ -124,7 +124,7 @@
 								<a href="#"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
 								<div class="blog-text text-center">
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius. Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-									<ul class="fh5co-social-icons">
+									<ul class="CMA-social-icons">
 										<li>Share:</li>
 										<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
 										<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
@@ -135,7 +135,7 @@
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="fh5co-blog animate-box">
+							<div class="CMA-blog animate-box">
 								<div class="title text-center">
 									<span class="posted-on">Nov. 15th 2016</span>
 									<h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
@@ -144,7 +144,7 @@
 								<a href="#"><img class="img-responsive" src="images/blog-2.jpg" alt=""></a>
 								<div class="blog-text text-center">
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<ul class="fh5co-social-icons">
+									<ul class="CMA-social-icons">
 										<li>Share:</li>
 										<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
 										<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
@@ -155,7 +155,7 @@
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="fh5co-blog animate-box">
+							<div class="CMA-blog animate-box">
 								<div class="title text-center">
 									<span class="posted-on">Nov. 15th 2016</span>
 									<h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
@@ -164,7 +164,7 @@
 								<a href="#"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
 								<div class="blog-text text-center">
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<ul class="fh5co-social-icons">
+									<ul class="CMA-social-icons">
 										<li>Share:</li>
 										<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
 										<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
@@ -175,7 +175,7 @@
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="fh5co-blog animate-box">
+							<div class="CMA-blog animate-box">
 								<div class="title text-center">
 									<span class="posted-on">Nov. 15th 2016</span>
 									<h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
@@ -184,7 +184,7 @@
 								<a href="#"><img class="img-responsive" src="images/blog-2.jpg" alt=""></a>
 								<div class="blog-text text-center">
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<ul class="fh5co-social-icons">
+									<ul class="CMA-social-icons">
 										<li>Share:</li>
 										<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
 										<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
@@ -195,7 +195,7 @@
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="fh5co-blog animate-box">
+							<div class="CMA-blog animate-box">
 								<div class="title text-center">
 									<span class="posted-on">Nov. 15th 2016</span>
 									<h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
@@ -204,7 +204,7 @@
 								<a href="#"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
 								<div class="blog-text text-center">
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<ul class="fh5co-social-icons">
+									<ul class="CMA-social-icons">
 										<li>Share:</li>
 										<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
 										<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
@@ -220,15 +220,15 @@
 				<aside id="sidebar">
 					<div class="col-md-3">
 						<div class="side animate-box">
-							<div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+							<div class="col-md-12 col-md-offset-0 text-center CMA-heading CMA-heading-sidebar">
 								<h2><span>About Me</span></h2>
 							</div>
-							<div class="fh5co-staff">
+							<div class="CMA-staff">
 								<img src="images/user-2.jpg" alt="Free HTML5 Templates by FreeHTML5.co">
 								<h3>Jean Smith</h3>
 								<strong class="role">CEO, Founder</strong>
 								<p>Quos quia provident conse culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita.</p>
-								<ul class="fh5co-social-icons">
+								<ul class="CMA-social-icons">
 									<li><a href="#"><i class="icon-facebook"></i></a></li>
 									<li><a href="#"><i class="icon-twitter"></i></a></li>
 									<li><a href="#"><i class="icon-dribbble"></i></a></li>
@@ -237,7 +237,7 @@
 							</div>
 						</div>
 						<div class="side animate-box">
-							<div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+							<div class="col-md-12 col-md-offset-0 text-center CMA-heading CMA-heading-sidebar">
 								<h2><span>Latest Posts</span></h2>
 							</div>
 							<div class="blog-entry">
@@ -269,7 +269,7 @@
 							</div>
 						</div>
 						<div class="side animate-box">
-							<div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+							<div class="col-md-12 col-md-offset-0 text-center CMA-heading CMA-heading-sidebar">
 								<h2><span>Category</span></h2>
 							</div>
 							<ul class="category">
@@ -282,7 +282,7 @@
 							</ul>
 						</div>
 						<div class="side animate-box">
-							<div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+							<div class="col-md-12 col-md-offset-0 text-center CMA-heading CMA-heading-sidebar">
 								<h2><span>Intagram</span></h2>
 							</div>
 							<div class="row">
@@ -300,10 +300,10 @@
 		</div>
 	</div>
 
-	<div id="fh5co-instagram">
+	<div id="CMA-instagram">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
+				<div class="col-md-12 col-md-offset-0 text-center CMA-heading">
 					<h2><span>Instagram Posts</span></h2>
 				</div>
 			</div>
@@ -324,16 +324,16 @@
 		</div>
 	</div>
 
-	<footer id="fh5co-footer" role="contentinfo">
+	<footer id="CMA-footer" role="contentinfo">
 		<div class="container">
 			<div class="row row-pb-md">
-				<div class="col-md-4 fh5co-widget">
+				<div class="col-md-4 CMA-widget">
 					<h4>Paper</h4>
 					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
 				</div>
 				<div class="col-md-4 col-md-push-1">
 					<h4>Links</h4>
-					<ul class="fh5co-footer-links">
+					<ul class="CMA-footer-links">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Blog</a></li>
 						<li><a href="#">Lifestyle</a></li>
@@ -344,7 +344,7 @@
 
 				<div class="col-md-4 col-md-push-1">
 					<h4>Contact Information</h4>
-					<ul class="fh5co-footer-links">
+					<ul class="CMA-footer-links">
 						<li>198 West 21th Street, <br> Suite 721 New York NY 10016</li>
 						<li><a href="tel://1234567920">+ 1235 2355 98</a></li>
 						<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
@@ -361,7 +361,7 @@
 						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
 					</p>
 					<p>
-						<ul class="fh5co-social-icons">
+						<ul class="CMA-social-icons">
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
 							<li><a href="#"><i class="icon-linkedin"></i></a></li>

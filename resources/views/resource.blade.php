@@ -152,7 +152,7 @@
         </div>
     </div>
 
-    <footer id="fh5co-footer" role="contentinfo">
+    <footer id="CMA-footer" role="contentinfo">
         <div class="container">
             <div class="row row-pb-md">
                 <div class="col-md-4 text-center">
@@ -160,7 +160,7 @@
                     <p>@lang('titles.footer_verse')</p>
                 </div>
                 <div class="col-md-4">
-                    <ul class="fh5co-footer-links">
+                    <ul class="CMA-footer-links">
                         <li><a href="/">@lang('titles.main')</a></li>
                         <li><a href="jesus">@lang('titles.know_jesus')</a></li>
                         <li><a href="sermons">@lang('titles.sermons')</a></li>
@@ -182,7 +182,7 @@
 
                 <div class="col-md-4">
                     <h4>@lang('titles.contact')</h4>
-                    <ul class="fh5co-footer-links">
+                    <ul class="CMA-footer-links">
                         <li>شارع أبو خليل القباني، دمشق - القصور</li>
                         <li><a href="tel://1234567920">01111111111 </a></li>
                         <li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
@@ -197,7 +197,7 @@
                         <small class="block">@lang('titles.church_name')</small>
                     </p>
                     <p>
-                    <ul class="fh5co-social-icons">
+                    <ul class="CMA-social-icons">
                         <li><a href="https://www.facebook.com/EvangelicalChristainAllianceChurch"><i
                                     class="icon-facebook"></i></a></li>
                         <li><a href="https://www.youtube.com/channel/UCXaubVFH2Ahgd_Ovv-sf73w"><i
