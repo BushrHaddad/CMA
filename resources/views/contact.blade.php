@@ -1,28 +1,5 @@
 @extends('layouts.layout')
 
-@section('page_title')
-<title>Contact</title>
-@endsection
-
-@section('active_index')
-<li><a href="/">@lang('titles.main')</a></li>
-<li><a href="jesus">@lang('titles.know_jesus')</a></li>
-<li><a href="sermons">@lang('titles.sermons')</a></li>
-<li><a href="hymns">@lang('titles.hymns')</a></li>
-<li><a href="articles">@lang('titles.articles')</a></li>
-<li class="has-dropdown">
-    <a href="#">@lang('titles.other_services')</a>
-    <ul class="dropdown">
-        <li><a href="#">@lang('titles.events')</a></li>
-        <li><a href="#">@lang('titles.books')</a></li>
-        <li><a href="#">@lang('titles.devotions')</a></li>
-    </ul>
-</li>
-<li><a href="about">@lang('titles.who_we_are')</a></li>
-<li class="active"><a href="contact">@lang('titles.contact')</a></li>
-<li><a href="donate">@lang('titles.donate')</a></li>
-@endsection
-
 @section('page_content')
 
 <div id="CMA-contact" class="CMA-no-pd-top">
@@ -32,7 +9,7 @@
                 <h2><span>@lang('titles.contact_us')</span></h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="form">
             <div class="col-md-9 col-padded-right">
                 <form action="#">
                     <div class="form-group row">
@@ -73,7 +50,7 @@
                 </form>
             </div>
 
-            <aside id="sidebar">
+            <aside id="CMA-sidebar">
                 <div class="info">
                     <div>
                         <h3>@lang('titles.location')</h3>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     @yield('page_title')
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free HTML5 Website Template by freehtml5.co"/>
+    <meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
 
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="" />
@@ -34,19 +34,13 @@
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="/css/magnific-popup.css">
 
-    <!-- Flexslider  -->
-    <!-- <link rel="stylesheet" href="/css/flexslider.css"> -->
-
-    <!-- Theme style  -->
-    <!-- <link rel="stylesheet" href="/css/style1.css"> -->
-    <link rel="stylesheet" href="/css/style.css">
 
     <!-- Modernizr JS -->
     <script src="/js/modernizr-2.6.2.min.js"></script>
 
     <!-- Vendor Css files -->
-
-    <!-- <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
@@ -54,8 +48,6 @@
     <link href="/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="/vendor/aos/aos.css" rel="stylesheet">
-
-    <!-- End vendor css files -->
 
 
     @php
@@ -80,28 +72,32 @@
 
                 <div class="row justify-content-center">
                     <div class="col-xl-11 d-flex align-items-center">
-                        <h1 class="logo mr-auto"><a href="/">BizPage</a></h1>
+                        <!-- <h1 class="logo mr-auto"><a href="/">Alliance Church</a></h1> -->
                         <!-- Uncomment below if you prefer to use an image logo -->
-                        <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+                        <a href="/" class="logo "><img src="/imgs/logo.png" alt="" class="img-fluid"></a>
 
                         <nav class="nav-menu d-none d-lg-block">
                             <ul>
-                                <li class="active"><a href="/">Home</a></li>
-                                <li><a href="#about">About Us</a></li>
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#team">Team</a></li>
-                                <li class="drop-down"><a href="">Drop Down</a>
-                                    <ul>
-                                        <li><a href="#">Drop Down 1</a></li>
-                                        <li><a href="#">Drop Down 3</a></li>
-                                        <li><a href="#">Drop Down 4</a></li>
-                                        <li><a href="#">Drop Down 5</a></li>
+                                <li><a href="/">@lang('titles.main')</a></li>
+                                <li><a href="jesus">@lang('titles.know_jesus')</a></li>
+                                <li><a href="sermons">@lang('titles.sermons')</a></li>
+                                <li><a href="hymns">@lang('titles.hymns')</a></li>
+                                <li><a href="articles">@lang('titles.articles')</a></li>
+                                <li class="drop-down">
+                                    <a href="#">@lang('titles.other_services')</a>
+                                    <ul class="dropdown"> 
+                                        <li><a href="#">@lang('titles.events')</a></li>
+                                        <li><a href="#">@lang('titles.books')</a></li>
+                                        <li><a href="#">@lang('titles.devotions')</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#contact">Contact Us</a></li>
+                                <li><a href="about">@lang('titles.who_we_are')</a></li>
+                                <li><a href="contact">@lang('titles.contact')</a></li>
+                                <li><a href="donate">@lang('titles.donate')</a></li>
+
 
                             </ul>
+
                         </nav><!-- .nav-menu -->
                     </div>
                 </div>

@@ -42,7 +42,7 @@
                 </ul>
             </div>
 
-            <div class="col-md-9" id="sidebar">
+            <div class="col-md-9" id="CMA-sidebar">
 
                 <div class="side animate-box">
                     <div class="col-md-12 col-md-offset-0 text-center CMA-heading CMA-heading-sidebar">

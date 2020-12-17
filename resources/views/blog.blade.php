@@ -217,7 +217,7 @@
 					</div>
 				</div>
 				
-				<aside id="sidebar">
+				<aside id="CMA-sidebar">
 					<div class="col-md-3">
 						<div class="side animate-box">
 							<div class="col-md-12 col-md-offset-0 text-center CMA-heading CMA-heading-sidebar">
