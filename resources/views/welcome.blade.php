@@ -7,7 +7,7 @@
     <div class="intro-container">
         <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
-            <ol class="carousel-indicators"></ol>
+            <!-- <ol class="carousel-indicators"></ol> -->
 
             <div class="carousel-inner" role="listbox">
 
@@ -139,8 +139,7 @@
                     <div class="card_body">
                         <h2 class="card_body_title"> ماهي مكانتك في المسيح؟</h2>
                         <div class="card_body_date">10/18/2020</div>
-                        <div class="card_body_subtitle">كلمة الله تقول أننا أبرار بفضل عمل المسيح أ أساس هذ تعيش على
-                            أساس هذه الحقيقة؟</div>
+                        <div class="card_body_subtitle"></div>
 
                     </div>
                     <!-- <div class="row card_footer">
@@ -167,7 +166,7 @@
 
                     <div class="card_portrait_img ">
                         <img alt="Mastered by Matchless Love: The Sweet Experience of Irresistible Grace"
-                            class="lazyloaded img-responsive" src="/imgs/slide3.jpg">
+                            class="lazyloaded img-responsive" src="/imgs/slide1.jpg">
                     </div>
                 </div>
 
@@ -175,8 +174,7 @@
                     <div class="card_body">
                         <h2 class="card_body_title"> ماهي مكانتك في المسيح؟</h2>
                         <div class="card_body_date">10/18/2020</div>
-                        <div class="card_body_subtitle">كلمة الله تقول أننا أبرار بفضل عمل المسيح على الصليب. ق أساس هذ تعيش على أساس هذه أساس هذ
-                        </div>
+                        <div class="card_body_subtitle"></div>
                     </div>
 
                     <!-- <div class="card_footer">
