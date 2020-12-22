@@ -1,10 +1,10 @@
-@font-face {
+/* @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 
 body {
@@ -125,6 +125,12 @@ h1, h2, h3, h4, h5, h6, figure {
   #header .logo {
     font-size: 28px;
   }
+}
+
+.specific-header{
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  height: 100px;
 }
 
 /*--------------------------------------------------------------
@@ -598,7 +604,10 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 50%;
   transform: translate(-50%, 0);
 }
-
+.fixed_sidebar{
+  position: fixed;
+  /* z-index: 10; */
+}
 #CMA-counter,
 .CMA-bg,
 .product,
@@ -1559,3 +1568,4 @@ float: right;
 #page .map{
   line-height: 0; 
 }
+

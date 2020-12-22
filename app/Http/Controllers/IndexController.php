@@ -53,8 +53,7 @@ class IndexController extends Controller
 
         // get all product that have matched name or description with the search query
         $results = Product::where('name', 'LIKE', "%$query%") 
-                -> orWhere('desc', 'LIKE', "%$query%")->distinct()->get();
-
+                -> orWhere('desc', 'LIKE', "%$query%")->distinct()->paginate(10);
         return view('search_results',compact('results'));
     }
 

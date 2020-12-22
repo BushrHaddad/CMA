@@ -195,6 +195,7 @@
     </div>
 </aside>
 
+
 <!-- ============ Map Content =================-->
 <div id='map-churches' class='map'>
     <iframe style="border:0; width: 100%; height: 500px;"

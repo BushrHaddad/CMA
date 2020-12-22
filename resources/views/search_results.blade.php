@@ -1,52 +1,49 @@
 @extends('layouts.layout')
 
-@section('page_title')
-<title>Alliance Church-Syria & Lebanon</title>
-@endsection
-
-@section('active_index')
-<li class="active"><a href="/">الرئيسية</a></li>
-<li><a href="jesus">تعرف على يسوع</a></li>
-<li><a href="sermons">عظات</a></li>
-<li><a href="songs">ترانيم</a></li>
-<li><a href="articles">مقالات</a></li>
-<li class="has-dropdown">
-    <a href="#">خدمات</a>
-    <ul class="dropdown">
-        <li><a href="#">أحداث مهمة</a></li>
-        <li><a href="#">كتب</a></li>
-        <li><a href="#">تأملات</a></li>
-    </ul>
-</li>
-<li><a href="contact">تواصل</a></li>
-<li><a href="donate">تبرع</a></li>
-
-@endsection
-
 @section('page_content')
-<!-- Header -->
-<table class="table">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Arabic Name</th>
-            <th>Operation</th>
-        </tr>
-    </thead>
-    <tbody>
+<div class="specific-header"></div>
 
-        @foreach ($results as $result)
-        <tr>
-            <th> {{$result->id}}</th>
-            <th> {{$result->name}}</th>
-            <th> {{$result->name_er}}</th>
-            <th> <a href="{{url('/edit/'.$result->id)}}" class="btn btn-success">Update</a></th>
-        </tr>
-        @endforeach
+<div id="CMA-content">
+    <div class="container">
+        <div class="row">
+            <div class="side animate-box col-md-3">
+                <div class="col-md-12 col-md-offset-0 text-center CMA-heading CMA-heading-sidebar">
+                    <h2><span>@lang('titles.topics')</span></h2>
+                </div>
+                <ul class="category">
 
-    </tbody>
-</table>
+                    @for($i = 0 ; $i< 5 ; $i++) 
+                        <li><a href="#"><i class="icon-check"></i>Topic</a></li>
+                     @endfor
+                </ul>
+            </div>
 
-<!-- Footer -->
+            <div class="col-md-9" id="CMA-sidebar">
+
+                <div class="side animate-box">
+                    <div class="col-md-12 col-md-offset-0 text-center CMA-heading CMA-heading-sidebar">
+                        <h2><span>@lang('titles.articles')</span></h2>
+                    </div>
+
+                    @foreach($results as $result)
+                    <div class="blog-entry">
+                        <a href="#">
+                            <!-- <img src="/imgs/blog-2.jpg" class="img-responsive" alt=""> -->
+                            <div class="desc">
+                                <span class="date">{{ date("m.d.y", strtotime($result->created_at) ) }}</span>
+                                <h3>{{$result->name}}</h3>
+                                <!-- <h5>{{$result->desc}}</h3> -->
+                            </div>
+                        </a>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+            <!-- Pagination -->
+            {{$results->links()}}
+        </div>
+    </div>
+</div>
+
+
 @endsection
