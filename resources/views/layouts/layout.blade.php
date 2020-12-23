@@ -25,29 +25,29 @@
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="/css/animate.css">
-    <!-- Icomoon Icon Fonts-->
+    <!-- Icomoon Icon Fonts (Social media icons) -->
     <link rel="stylesheet" href="/css/icomoon.css">
 
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="/css/bootstrap.css">
 
     <!-- Magnific Popup -->
-    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <!-- <link rel="stylesheet" href="/css/magnific-popup.css"> -->
 
 
     <!-- Modernizr JS -->
-    <script src="/js/modernizr-2.6.2.min.js"></script>
+    <!-- <script src="/js/modernizr-2.6.2.min.js"></script> -->
 
     <!-- Vendor Css files -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <link href="/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="/vendor/aos/aos.css" rel="stylesheet">
+    <!-- <link href="/vendor/animate.css/animate.min.css" rel="stylesheet"> -->
+    <!-- <link href="/vendor/venobox/venobox.css" rel="stylesheet"> -->
+    <!-- <link href="/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+    <!-- <link href="/vendor/aos/aos.css" rel="stylesheet"> -->
 
 
     @php
@@ -203,19 +203,19 @@
 
 
 
-        <!-- Vendor JS Files -->
+        <!-- Vendor JS Files (For hero crousal)-->
         <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="/vendor/jquery.easing/jquery.easing.min.js"></script>
-        <script src="/vendor/php-email-form/validate.js"></script>
-        <script src="/vendor/waypoints/jquery.waypoints.min.js"></script>
-        <script src="/vendor/counterup/counterup.min.js"></script>
-        <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="/vendor/venobox/venobox.min.js"></script>
-        <script src="/vendor/owl.carousel/owl.carousel.min.js"></script>
-        <script src="/vendor/aos/aos.js"></script>
+        <!-- <script src="/vendor/jquery.easing/jquery.easing.min.js"></script> -->
+        <!-- <script src="/vendor/php-email-form/validate.js"></script> -->
+        <!-- <script src="/vendor/waypoints/jquery.waypoints.min.js"></script> -->
+        <!-- <script src="/vendor/counterup/counterup.min.js"></script> -->
+        <!-- <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+        <!-- <script src="/vendor/venobox/venobox.min.js"></script> -->
+        <!-- <script src="/vendor/owl.carousel/owl.carousel.min.js"></script> -->
+        <!-- <script src="/vendor/aos/aos.js"></script> -->
 
         <!-- Template Main JS File -->
-        <script src="/vendor/main.js"></script>
+        <!-- <script src="/vendor/main.js"></script> -->
     </div>
 </body>
 

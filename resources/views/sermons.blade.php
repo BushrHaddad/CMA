@@ -1,6 +1,7 @@
 @extends('layouts.layout')
 
 @section('page_content')
+<div class="specific-header"></div>
 
 <div id="cards">
     <div class="container">

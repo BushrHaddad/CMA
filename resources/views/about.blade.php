@@ -1,32 +1,6 @@
 @extends('layouts.layout')
-
-@section('page_title')
-<title>About</title>
-@endsection
-
-@section('active_index')
-
-
-<li><a href="/">@lang('titles.main')</a></li>
-<li><a href="jesus">@lang('titles.know_jesus')</a></li>
-<li><a href="sermons">@lang('titles.sermons')</a></li>
-<li><a href="hymns">@lang('titles.hymns')</a></li>
-<li><a href="articles">@lang('titles.articles')</a></li>
-<li class="has-dropdown">
-    <a href="#">@lang('titles.other_services')</a>
-    <ul class="dropdown">
-        <li><a href="#">@lang('titles.events')</a></li>
-        <li><a href="#">@lang('titles.books')</a></li>
-        <li><a href="#">@lang('titles.devotions')</a></li>
-    </ul>
-</li>
-<li class="active"><a href="about">@lang('titles.who_we_are')</a></li>
-<li><a href="contact">@lang('titles.contact')</a></li>
-<li><a href="donate">@lang('titles.donate')</a></li>
-
-@endsection
-
 @section('page_content')
+<div class="specific-header"></div>
 
 <div id="CMA-blog">
 		<div class="container">

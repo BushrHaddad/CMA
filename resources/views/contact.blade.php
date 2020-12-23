@@ -1,6 +1,7 @@
 @extends('layouts.layout')
 
 @section('page_content')
+<div class="specific-header"></div>
 
 <div id="CMA-contact" class="CMA-no-pd-top">
     <div class="container">
