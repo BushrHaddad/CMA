@@ -11,7 +11,7 @@
 
             <div class="carousel-inner" role="listbox">
 
-                <div class="carousel-item active" style="background-image: url(/imgs/slide2.jpg)">
+                <div class="carousel-item active" style="background-image: url(/imgs/slide4.png)">
                     <div class="carousel-container">
                         <div class="container">
                             <h2 class="animate__animated animate__fadeInDown">We are professional</h2>
@@ -25,7 +25,7 @@
                     </div>
                 </div>
 
-                <div class="carousel-item" style="background-image: url(/imgs/slide3.jpg)">
+                <div class="carousel-item" style="background-image: url(/imgs/slide5.jpg)">
                     <div class="carousel-container">
                         <div class="container">
                             <h2 class="animate__animated animate__fadeInDown">At vero eos et accusamus</h2>
@@ -56,7 +56,7 @@
 </section>
 
 <!-- =========== Content Section ============= -->
-<div id="CMA-content">
+<section id="CMA-content">
     <div class="container">
         <div class="row">
             <div class="col-md-9 col-padded-right">
@@ -113,11 +113,11 @@
             </aside>
         </div>
     </div>
-</div>
+</section>
 
 <!-- ============ Latest Section ============== -->
 <aside id="cards">
-    <div class="container">
+    <div class="cards_container">
         <div class="row">
             @for ($i = 0; $i < 2; $i++) @for($j=0; $j < 2; $j++) <div class="col-md-3">
                 <a href="https://www.desiringgod.org/labs/why-do-we-thank-god-for-our-love" class="grid-x1-3 card">
@@ -128,23 +128,13 @@
                     </div>
                     <div class="card_landscape_img">
                         <img alt="Mastered by Matchless Love: The Sweet Experience of Irresistible Grace"
-                            class="lazyloaded img-responsive" src="/imgs/slide1.jpg">
+                            class="lazyloaded img-responsive" src="/imgs/slide5.jpg">
                     </div>
 
                     <div class="card_body">
                         <h2 class="card_body_title"> ماهي مكانتك في المسيح؟</h2>
                         <div class="card_body_date">10/18/2020</div>
-                        <div class="card_body_subtitle">There should be no presumption that any critical juncture will
-                            lead to a successful political revolution or to change for the better. History is full of
-                            examples of revolutions and radical movements replacing one tyranny with another.
-                            The end of colonialism in the decades following the Second World War created critical
-                            junctures for many former colonies. However, in most cases in subSaharan Africa and many in
-                            Asia, the postindependence governments simply took a page out of Robert Michels’s book and
-                            repeated and intensified the abuses of their predecessors, often severely narrowing the
-                            distribution of political power, dismantling constraints, and undermining the already meager
-                            incentives that economic institutions provided for investment and economic progress. It was
-                            onlyin a few cases, societies such as Botswana, that critical junctures were used to launch
-                            a process of political and economic change that paved the way for economic growth
+                        <div class="card_body_subtitle">There ay for economic growth
                         </div>
 
                     </div>
@@ -203,7 +193,6 @@
                     </div>
                     <span class="share_count">172 Shares</span>
                 </div>
-
 
             </a>
         </div>

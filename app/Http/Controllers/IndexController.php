@@ -39,7 +39,22 @@ class IndexController extends Controller
         $results = Product::where('s_list_id', '38')->paginate(9);
         return view('hymns',compact('results'));
     }
-    
+
+    // go for specific resource {Hymn, Sermon, Article, and other}
+    public function show_resource($id){
+        // Resource title or name 
+        // Resource subtitle
+        // Resource date
+        // Resource Sharecount
+        // Resource image + {Audio | Video} ?
+        // Resource author name, image, and etc.
+        // Resource desc or text 
+        // Resource Related materials 
+        
+        $result = Product::where('id', $id)->first();
+        return view ('resource', compact('result'));  
+    }
+
     public function contact(){
         return view('contact');
     }

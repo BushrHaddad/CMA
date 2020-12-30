@@ -71,15 +71,15 @@
             <div class="container-fluid">
 
                 <div class="row justify-content-center">
-                    <div class="col-xl-11 d-flex align-items-center">
-                        <a href="/" class="logo "><img src="/imgs/logo.png" alt="" class="img-fluid"></a>
+                    <div class="d-flex align-items-center">
+                        <a href="/" class="logo"><img src="/imgs/logo.png" alt="" class="img-fluid"></a>
                         <nav class="nav-menu d-none d-lg-block">
                             <ul>
-                                <li><a href="/">@lang('titles.main')</a></li>
-                                <li><a href="jesus">@lang('titles.know_jesus')</a></li>
-                                <li><a href="sermons">@lang('titles.sermons')</a></li>
-                                <li><a href="hymns">@lang('titles.hymns')</a></li>
-                                <li><a href="articles">@lang('titles.articles')</a></li>
+                                <li><a href="{{ route('main') }} ">@lang('titles.main')</a></li>
+                                <li><a href="{{ route('jesus') }}">@lang('titles.know_jesus')</a></li>
+                                <li><a href="{{ route('sermons') }}">@lang('titles.sermons')</a></li>
+                                <li><a href="{{ route('hymns') }}">@lang('titles.hymns')</a></li>
+                                <li><a href="{{ route('articles') }}">@lang('titles.articles')</a></li>
                                 <li class="drop-down">
                                     <a href="#">@lang('titles.other_services')</a>
                                     <ul class="dropdown">
@@ -88,9 +88,9 @@
                                         <li><a href="#">@lang('titles.devotions')</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="about">@lang('titles.who_we_are')</a></li>
-                                <li><a href="contact">@lang('titles.contact')</a></li>
-                                <li><a href="donate">@lang('titles.donate')</a></li>
+                                <li><a href="{{ route('about') }}">@lang('titles.who_we_are')</a></li>
+                                <li><a href="{{ route('contact') }}">@lang('titles.contact')</a></li>
+                                <li><a href="{{ route('donate') }}">@lang('titles.donate')</a></li>
                                 
                                 <form id="form" method="POST" action="{{route('search')}}">
                                     @csrf
@@ -104,7 +104,9 @@
 
 
 
-                        </nav><!-- .nav-menu -->
+                        </nav>
+
+
                     </div>
                 </div>
 

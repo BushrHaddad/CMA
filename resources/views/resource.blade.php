@@ -2,51 +2,49 @@
 
 @section('page_content')
 
-<div class="resource">
-    <div class="masthead" style="background-image: url(/imgs/img_bg_1.jpg);">
+<div>
+    <div class="masthead" style="background-image: url(/imgs/blog-1.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="site-heading">
-                        <h1>Clean Blog</h1>
-                        <span class="subheading">A Blog Theme by Start Bootstrap</span>
+                        <h1>{{ $result->name }}</h1>
+                        <span class="subheading">{{ $result->name }}</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="resource-hero">
-            <iframe class="youtube-player" type="text/html" width="800" height="450"
+    </div>
+    <div class="resource-hero">
+            <!-- <iframe class="youtube-player" type="text/html"
                 src="https://www.youtube.com/embed/ihi2oe_sXN0" frameborder="0">
-            </iframe>
+            </iframe>  -->
+           
+          <audio class="youtube-player" controls src="/audios/audio1.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+            </audio>
+
+        </div>
+
+    <div class="resource-hero-info">
+        <time class="resource-date"
+            datetime="2020-11-12">{{ \Carbon\Carbon::parse($result->created)->format('jS F Y') }}</time>
+        <div class="resource-author">
+            <img alt="" class="card_author_image"
+                src="https://dg.imgix.net/john-piper-t1zc1vhs-en/square/john-piper-t1zc1vhs-bb4f7ebdfa75335bd1534e50dc3bbc7c.jpg?ts=1549038789&amp;ixlib=rails-4.1.0&amp;auto=format%2Ccompress&amp;fit=min&amp;w=30&amp;h=30&amp;dpr=2&amp;ch=Width%2CDPR">
+            <!-- src="https://dg.imgix.net/john-piper-t1zc1vhs-en/square/john-piper-t1zc1vhs-bb4f7ebdfa75335bd1534e50dc3bbc7c.jpg?ts=1549038789&amp;ixlib=rails-4.1.0&amp;auto=format%2Ccompress&amp;fit=min&amp;w=30&amp;h=30&amp;dpr=2&amp;ch=Width%2CDPR"> -->
+            <span class="card_author_text">{{$result->author_name}}</span>
         </div>
     </div>
 
-    <div class="resource-hero-info">
-        <time class="resource-date" datetime="2020-11-12">November 12, 2020 </time>
-        <div class="resource-author">
-            <img alt="" class="card_author_image"
-                src="https://dg.imgix.net/jon-piper-t1zc1vhs-en/square/john-piper-t1zc1vhs-bb4f7ebdfa75335bd1534e50dc3bbc7c.jpg?ts=1549038789&amp;ixlib=rails-4.1.0&amp;auto=format%2Ccompress&amp;fit=min&amp;w=30&amp;h=30&amp;dpr=2&amp;ch=Width%2CDPR">
-            <span class="card_author_text">طلال شماس</span>
-        </div>
-    </div>
 
     <div class="resource-text">
         <h2>
             طوبى للرحماء لأنهم يُرحمون
             </h1>
-            <p>
-                اذا كنت حزيناً...
-                تأكد انك لست لوحدك و أن الرب يسوع يعرف ما تمر به و يشعر معك لأنه هو نفسه اختبر كل مشاعر الحزن و
-                الألم و الرفض قبلك.
-                فهو: " الخبير في الاحزان "
-                رجل اوجاع ومختبر الحزن (اش3:53)
-
-                هكذا يصف إشعياء ربنا وحبيبنا يسوع في حياته على الأرض. فكم سمعنا عن شخص وُصف أنه رجل حرب أو رجل فن أو
-                رجل علم أو رجل سياسة، أما "رجل أوجاع" فلم نسمع عنها ابدا. إنها صفة "رب المجد" في حياته على الأرض.
-
-                "أوجاع" تعني أحزان عميقة، فهي ليست نوعاً واحداً من الحزن، بل أشكال متعددة وقد اختبرها الرب كلها
-                وضغطت بكل ثقلها على نفسه الرقيقة الحساسة، فصار "مُختبر الحَزَن" بمعنى مَنْ له دراية كُلية بالحزن.
-            </p>
+            <!-- this is resource desc or the article associated  -->
+            {!! $result->desc !!}
     </div>
     <hr style="height: .2px; background-color:gray">
     <div class="resource-footer">
@@ -55,8 +53,7 @@
 <div id="cards" class="related-resources">
     <div class="container">
         <div class="row">
-        @for ($i = 0; $i < 4; $i++)
-            <div class="col-md-3">
+            @for ($i = 0; $i < 4; $i++) <div class="col-md-3">
                 <a href="https://www.desiringgod.org/labs/why-do-we-thank-god-for-our-love" class="grid-x1-3 card">
                     <div class="card_label">
                         <div class="card_label_inner">
@@ -90,10 +87,10 @@
                     </div>
 
                 </a>
-            </div>
-        @endfor
         </div>
+        @endfor
     </div>
+</div>
 </div>
 
 <!-- Footer -->

@@ -40,7 +40,7 @@
                     <div class="form-group row">
                         <div class="col-md-12 field">
                             <label for="message">@lang('titles.message')</label>
-                            <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+                            <textarea style ="height:300px;" name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
                         </div>
                     </div>
                     <div class="form-group row">

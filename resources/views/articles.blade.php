@@ -10,12 +10,21 @@
                 <div class="col-md-12 col-md-offset-0 text-center CMA-heading CMA-heading-sidebar">
                     <h2><span>@lang('titles.topics')</span></h2>
                 </div>
-                <ul class="category">
+                <div id="fh5co_tags_all">
+                    <a href="#" class="fh5co_tagg">Business</a>
+                    <a href="#" class="fh5co_tagg">Technology</a>
+                    <a href="#" class="fh5co_tagg">Sport</a>
+                    <a href="#" class="fh5co_tagg">Art</a>
+                    <a href="#" class="fh5co_tagg">Lifestyle</a>
+                    <a href="#" class="fh5co_tagg">Three</a>
+                    <a href="#" class="fh5co_tagg">Photography</a>
+                    <a href="#" class="fh5co_tagg">Lifestyle</a>
+                    <a href="#" class="fh5co_tagg">Art</a>
+                    <a href="#" class="fh5co_tagg">Education</a>
+                    <a href="#" class="fh5co_tagg">Social</a>
+                    <a href="#" class="fh5co_tagg">Three</a>
+                </div>
 
-                    @for($i = 0 ; $i< 5 ; $i++) 
-                        <li><a href="#"><i class="icon-check"></i>Topic</a></li>
-                     @endfor
-                </ul>
             </div>
 
             <div class="col-md-9" id="CMA-sidebar">
@@ -27,10 +36,10 @@
 
                     @foreach($results as $result)
                     <div class="blog-entry">
-                        <a href="#">
+                        <a href="{{route('resource',$result->id)}}" >
                             <img src="/imgs/blog-2.jpg" class="img-responsive" alt="">
                             <div class="desc">
-                                <span class="date">{{ date("m.d.y", strtotime($result->created_at) ) }}</span>
+                                <span class="date">{{ \Carbon\Carbon::parse($result->created)->format('jS F Y') }}</span>
                                 <!-- <span class="date">2020-Dec-5</span> -->
                                 <h3>{{$result->name}}</h3>
                             </div>

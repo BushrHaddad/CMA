@@ -10,21 +10,26 @@
                 <div class="col-md-12 col-md-offset-0 text-center CMA-heading CMA-heading-sidebar">
                     <h2><span>@lang('titles.topics')</span></h2>
                 </div>
-                <ul class="category">
-
-                    @for($i = 0 ; $i< 5 ; $i++) 
-                        <li><a href="#"><i class="icon-check"></i>Topic</a></li>
-                     @endfor
-                </ul>
+                <div id="fh5co_tags_all">
+                    <a href="#" class="fh5co_tagg">Business</a>
+                    <a href="#" class="fh5co_tagg">Technology</a>
+                    <a href="#" class="fh5co_tagg">Sport</a>
+                    <a href="#" class="fh5co_tagg">Art</a>
+                    <a href="#" class="fh5co_tagg">Lifestyle</a>
+                    <a href="#" class="fh5co_tagg">Three</a>
+                    <a href="#" class="fh5co_tagg">Photography</a>
+                    <a href="#" class="fh5co_tagg">Lifestyle</a>
+                    <a href="#" class="fh5co_tagg">Art</a>
+                    <a href="#" class="fh5co_tagg">Education</a>
+                    <a href="#" class="fh5co_tagg">Social</a>
+                    <a href="#" class="fh5co_tagg">Three</a>
+                </div>
+                
             </div>
 
             <div class="col-md-9" id="CMA-sidebar">
 
                 <div class="side animate-box">
-                    <div class="col-md-12 col-md-offset-0 text-center CMA-heading CMA-heading-sidebar">
-                        <h2><span>@lang('titles.articles')</span></h2>
-                    </div>
-
                     @foreach($results as $result)
                     <div class="blog-entry">
                         <a href="#">

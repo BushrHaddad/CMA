@@ -43,13 +43,16 @@ Route::group(
         // All Hymns
         Route::get('/hymns', [IndexController::class, 'all_hymns'])->name('hymns');
        
-        // Show Resource
-        Route::get('/resource/{$id}', [IndexController::class, 'show_resource']);
+        // Go for specific resource {Sermon, Hymn, Article, and others}
+        Route::get('/resource/{id}', [IndexController::class, 'show_resource'])->name('resource');
         
         // contact
         Route::get('/contact', [IndexController::class, 'contact'])->name('contact');
         
         // About
         Route::get('/about', [IndexController::class, 'about'])->name('about');
+
+        // donate
+        Route::get('/donate', [IndexController::class, 'about'])->name('donate');
 });
 

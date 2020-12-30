@@ -10,11 +10,21 @@
                 <div class="col-md-12 col-md-offset-0 text-center CMA-heading CMA-heading-sidebar">
                     <h2><span>مواضيع</span></h2>
                 </div>
-                <ul class="category">
+                <div id="fh5co_tags_all">
+                    <a href="#" class="fh5co_tagg">Business</a>
+                    <a href="#" class="fh5co_tagg">Technology</a>
+                    <a href="#" class="fh5co_tagg">Sport</a>
+                    <a href="#" class="fh5co_tagg">Art</a>
+                    <a href="#" class="fh5co_tagg">Lifestyle</a>
+                    <a href="#" class="fh5co_tagg">Three</a>
+                    <a href="#" class="fh5co_tagg">Photography</a>
+                    <a href="#" class="fh5co_tagg">Lifestyle</a>
+                    <a href="#" class="fh5co_tagg">Art</a>
+                    <a href="#" class="fh5co_tagg">Education</a>
+                    <a href="#" class="fh5co_tagg">Social</a>
+                    <a href="#" class="fh5co_tagg">Three</a>
+                </div>
 
-                    @for($i = 0 ; $i< 5 ; $i++) <li><a href="#"><i class="icon-check"></i>Topic</a></li>
-                        @endfor
-                </ul>
             </div>
 
             <div class="col-md-9" id="CMA-sidebar">
@@ -26,8 +36,7 @@
 
                     @foreach($results as $result)
                     <div class="col-md-6">
-                        <a href="https://www.desiringgod.org/labs/why-do-we-thank-god-for-our-love"
-                            class="grid-x1-3 card">
+                        <a href="{{route('resource',$result->id)}}" class="grid-x1-3 card">
                             <div class="card_label">
                                 <div class="card_label_inner">
                                     <h5>عظات</h3>
@@ -46,7 +55,7 @@
                                 <div class="card_body_subtitle"> {{$result->desc}} </div>
 
                             </div>
-                            
+
                             <div class="card_footer">
                                 <div class="card_author">
                                     <img alt="" class="card_author_image"
