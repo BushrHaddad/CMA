@@ -15,10 +15,11 @@
             </div>
         </div>
     </div>
+    
     <div class="resource-hero">
             <!-- <iframe class="youtube-player" type="text/html"
                 src="https://www.youtube.com/embed/ihi2oe_sXN0" frameborder="0">
-            </iframe>  -->
+            </iframe>  -->  
            
           <audio class="youtube-player" controls src="/audios/audio1.mp3">
                 Your browser does not support the
