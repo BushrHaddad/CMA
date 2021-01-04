@@ -1544,16 +1544,6 @@ h1, h2, h3, h4, h5, h6, figure {
 /* Resource */
 /* ===================================================== */
 
-.resource-hero{
-  position: relative;
-  /* height: 100vh; */
-  display: flex;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-} 
-
-
 .masthead {
   margin-bottom: 10px;
   background: no-repeat center center;
@@ -1647,14 +1637,29 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 /* ========== */
 
-
-.youtube-player{
-  
-  margin-top: -230px;
-  width: 70%;
-  /* height: 100%; */
+.resource-hero{
+  position: relative;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
+} 
+
+
+.youtube-player{
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -230px;
+}
+
+.audio-player{
+  margin-top: -130px;
+  width: 70%; 
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
 }
 
 #page .resource-hero-info{
@@ -1665,7 +1670,7 @@ h1, h2, h3, h4, h5, h6, figure {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
+  padding-top: 30px;
   /* overflow: auto; */
 }
 
@@ -1687,15 +1692,14 @@ float: right;
 
 #page .resource-text{
   padding-bottom: 40px;
-  margin-top: 30px;
+  padding-top: 50px;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 180%;
   font-weight: 400;
   letter-spacing: normal;
   position: relative;
-  /* text-align:right; */
-  max-width: 700px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1708,3 +1712,43 @@ float: right;
 #page .map{
   line-height: 0; 
 }
+
+/* ================== Know Jesus Section ========================================= */
+.bg-image {
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Images used */
+.img1 { background-image: url(/imgs/slide2.jpg); }
+.img2 { background-image: url(/imgs/slide2.jpg); }
+.img3 { background-image: url(/imgs/slide2.jpg); }
+.img4 { background-image: url(/imgs/slide2.jpg); }
+.img5 { background-image: url(/imgs/slide2.jpg); }
+.img6 { background-image: url(/imgs/slide2.jpg); }
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: relative; /* Stay fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+/* ================== End Jesus Section  ========================================= */

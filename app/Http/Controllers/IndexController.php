@@ -17,7 +17,7 @@ class IndexController extends Controller
     }
 
     public function jesus(){
-        return view ('resource');
+        return view ('know_jesus');
     }
     
     // get all sermons and pass them to sermons view

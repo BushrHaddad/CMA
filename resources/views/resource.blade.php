@@ -3,7 +3,7 @@
 @section('page_content')
 
 <div>
-    <div class="masthead" style="background-image: url(/imgs/blog-1.jpg);">
+    <div class="masthead" style="background-image: url(/imgs/slide5.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
@@ -15,18 +15,19 @@
             </div>
         </div>
     </div>
-    
+
     <div class="resource-hero">
-            <!-- <iframe class="youtube-player" type="text/html"
-                src="https://www.youtube.com/embed/ihi2oe_sXN0" frameborder="0">
-            </iframe>  -->  
-           
-          <audio class="youtube-player" controls src="/audios/audio1.mp3">
+
+        <iframe class="youtube-player" type="text/html" width="800" height="430"
+            src="https://www.youtube.com/embed/ihi2oe_sXN0" frameborder="0">
+        </iframe>
+
+        <!-- <audio class="audio-player" controls src="/audios/audio1.mp3">
                 Your browser does not support the
                 <code>audio</code> element.
-            </audio>
+            </audio>  -->
 
-        </div>
+    </div>
 
     <div class="resource-hero-info">
         <time class="resource-date"
@@ -41,11 +42,12 @@
 
 
     <div class="resource-text">
-        <h2>
-            طوبى للرحماء لأنهم يُرحمون
-            </h1>
-            <!-- this is resource desc or the article associated  -->
-            {!! $result->desc !!}
+        <!-- Article Title -->
+        <h1>
+            {{ $result->name }}
+        </h1>
+        <!-- Article Description or Text -->
+        {!! $result->desc !!}
     </div>
     <hr style="height: .2px; background-color:gray">
     <div class="resource-footer">
