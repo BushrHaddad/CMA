@@ -42,6 +42,9 @@ Route::group(
 
         // All Hymns
         Route::get('/hymns', [IndexController::class, 'all_hymns'])->name('hymns');
+
+        // Topics
+        Route::get('/topics', [IndexController::class, 'all_topics'])->name('topics');
        
         // Go for specific resource {Sermon, Hymn, Article, and others}
         Route::get('/resource/{id}', [IndexController::class, 'show_resource'])->name('resource');
@@ -51,6 +54,7 @@ Route::group(
         
         // About
         Route::get('/about', [IndexController::class, 'about'])->name('about');
+      
 
         // donate
         Route::get('/donate', [IndexController::class, 'about'])->name('donate');

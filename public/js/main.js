@@ -262,10 +262,9 @@
 		goToTop();
 		loaderPage();
 		counterWayPoint();
-		// fullHeight();
 	});
 
-	  // Smooth scroll for the navigation menu and links with .scrollto classes
+	//   // Smooth scroll for the navigation menu and links with .scrollto classes
 	  var scrolltoOffset = $('#header').outerHeight() - 17;
 	  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -298,33 +297,41 @@
 		}
 	  });
 	
-	  // Activate smooth scroll on page load with hash links in the url
-	  // $(document).ready(function() {
-	  //   if (window.location.hash) {
-	  //     var initial_nav = window.location.hash;
-	  //     if ($(initial_nav).length) {
-	  //       var scrollto = $(initial_nav).offset().top - scrolltoOffset;
-	  //       $('html, body').animate({
-	  //         scrollTop: scrollto
-	  //       }, 1500, 'easeInOutExpo');
-	  //     }
-	  //   }
-	  // });
+	//   Activate smooth scroll on page load with hash links in the url
+	  $(document).ready(function() {
+	    if (window.location.hash) {
+	      var initial_nav = window.location.hash;
+	      if ($(initial_nav).length) {
+	        var scrollto = $(initial_nav).offset().top - scrolltoOffset;
+	        $('html, body').animate({
+	          scrollTop: scrollto
+	        }, 1500, 'easeInOutExpo');
+	      }
+	    }
+	  });
 	
 	
 	  // Header scroll class
 	  $(window).scroll(function() {
-		if ($(this).scrollTop() > 100) {
+		if ($(this).scrollTop() > 100 ) {
 		  $('#header').addClass('header-scrolled');
 		} else {
 		  $('#header').removeClass('header-scrolled');
 		}
 	  });
-	
-	  if ($(window).scrollTop() > 100) {
-		$('#header').addClass('header-scrolled');
-	  }
-	
+
+	  // hiding the navbar on scrolling down and showing on scrolling up
+		var prevScrollpos = window.pageYOffset;	
+		$(window).scroll(function() {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("header").style.top = "0";
+			} else {
+				document.getElementById("header").style.top = "-110px";
+			}
+				prevScrollpos = currentScrollPos;
+		});
+
 	  // Navigation active state on scroll
 	  var nav_sections = $('section');
 	  var main_nav = $('.nav-menu, .mobile-nav');
