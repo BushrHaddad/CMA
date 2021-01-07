@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Product;
+use DB;
 
 class IndexController extends Controller
 {
@@ -42,7 +43,28 @@ class IndexController extends Controller
 
     // get all topics 
     public function all_topics(){
-        return view('topics');
+
+        $entries = DB::table('holy_bible')
+        ->addSelect(DB::raw('testament'))    
+        ->addSelect(DB::raw('book'))
+        ->addSelect(DB::raw('chapter'))
+        ->addSelect(DB::raw('COUNT("verse") as number_verses'))
+            ->groupBy('testament','book','chapter') 
+            ->orderBy('testament_nu', 'asc')
+            ->orderBy('book_no', 'asc')
+            ->orderBy('chapter', 'asc')
+            ->get();
+
+        foreach($entries as $entry)
+        {
+            $results[strval($entry->testament)][strval($entry->book)][intval(strval($entry->chapter))] = strval($entry->number_verses); 
+        }
+
+      
+        // echo json_encode(array($results));
+        // return $results;      
+        return view('topics',compact('results'));
+
     }
 
     // go for specific resource {Hymn, Sermon, Article, and other}
