@@ -34,6 +34,8 @@ return [
     "location" => "الموقع",
     "main_church_address" => "شارع أبو خليل القباني, دمشق-القصور",
     "chapter" => "الإصحاح",
-    
+    "alliance_churches" => "كنائس الإتحاد",
+    "scriptures" => "الكتاب المقدس",
+    "all_resources" => "جميع المصادر",
     
 ];

@@ -33,4 +33,7 @@ return [
     "location" => "Location",
     "main_church_address" => "Abo khalil Al Qabani, Qausor-Damascus",
     "chapter" => "Chapter",
+    "alliance_churches" => "Alliance Churches",
+    "scriptures" => "Scriptures",
+    "all_resources" => "All Resources",
 ];

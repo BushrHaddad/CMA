@@ -20,3 +20,15 @@ Seeding
 .gitignore: this file contains the name of all the files that won't uploaded during git
 -------------------------------------------------------------------
 After changin the database, it's necessay to re-run the project.
+========================
+To select all products that have a specific bible verse
+    SELECT * From product p INNER JOIN attachments att ON att.product_id = p.id WHERE att.note1=150 
+
+To select all products that have a specific bible chapter book|chapter
+    SELECT DISTINCT p.* FROM product p
+        INNER JOIN attachments att
+            ON att.product_id = p.id
+             WHERE att.note1 IN (SELECT holy_bible.ID from holy_bible where holy_bible.testament_num=1 AND holy_bible.book_num=01 AND holy_bible.chapter=01) 
+
+===========================================
+

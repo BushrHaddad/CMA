@@ -45,32 +45,78 @@ class IndexController extends Controller
     public function all_topics(){
 
         $entries = DB::table('holy_bible')
-        ->addSelect(DB::raw('testament'))    
+        ->addSelect(DB::raw('testament_num'))  
+        ->addSelect(DB::raw('testament')) 
         ->addSelect(DB::raw('book'))
+        ->addSelect(DB::raw('book_num'))
         ->addSelect(DB::raw('chapter'))
         ->addSelect(DB::raw('COUNT("verse") as number_verses'))
-            ->groupBy('testament','book','chapter') 
-            ->orderBy('testament_nu', 'asc')
-            ->orderBy('book_no', 'asc')
+            ->groupBy('testament','testament_num','book','book_num','chapter') 
+            ->orderBy('testament_num', 'asc')
+            ->orderBy('book_num', 'asc')
             ->orderBy('chapter', 'asc')
             ->get();
 
         foreach($entries as $entry)
         {
-            $results[strval($entry->testament)][strval($entry->book)][intval(strval($entry->chapter))] = strval($entry->number_verses); 
+            // $results[strval($entry->testament)]
+
+            $results[strval($entry->testament)] ['testament_num'] = strval($entry->testament_num);
+            $results[strval($entry->testament)] ['book'] [strval($entry->book)] ['book_num'] =  strval($entry->book_num);            
+            $results[strval($entry->testament)] ['book'] [strval($entry->book)] [strval($entry->chapter)] = strval($entry->number_verses); 
+
+            // intval()
         }
-
-      
-        // echo json_encode(array($results));
-        // return $results;      
+        // return $results;
         return view('topics',compact('results'));
-
     }
 
     // go for specific resource {Hymn, Sermon, Article, and other}
     public function show_resource($id){
         $result = Product::where('id', $id)->first();
         return view ('resource', compact('result'));  
+    }
+
+    public function scripture_result( $testament, $book, $chapter){
+        // $result1 = DB::table('holy_bible')
+        // ->addSelect(DB::raw('data_tash'))  
+        // ->addSelect(DB::raw('sub_tit_val'))  
+        // ->addSelect(DB::raw('ch_b'))  
+        // ->where('testament_num', $testament)
+        // ->where('book_num', $book)
+        // ->where('chapter', $chapter)->get();
+        // // return $results;
+        
+        // $result1 = json_decode($result1, true);
+        // $res['verses'] = $result1;
+       
+
+        // $sub = DB::table('holy_bible')
+        //     ->addSelect(DB::raw('ID'))  
+        //     ->where('testament_num', $testament)
+        //     ->where('book_num', $book)
+        //     ->where('chapter', $chapter)->get();
+
+
+        $result2 = DB::table('product')
+            -> select(['product.id', 'product.name', 'product.desc'])
+            -> distinct()
+            -> join('attachments', 'attachments.product_id', '=', 'product.id')
+            -> whereIn('attachments.note1',function($query) use ($testament, $book, $chapter) {
+
+                $query->select('ID')
+                ->from('holy_bible')
+                ->where('holy_bible.testament_num',$testament)
+                ->where('holy_bible.book_num',$book)
+                ->where('holy_bible.chapter',$chapter)
+                ;
+             
+             })
+            -> get();
+
+        return $result2;
+
+        // return view('scripture', compact('results'));
     }
 
 

@@ -48,6 +48,8 @@ Route::group(
        
         // Go for specific resource {Sermon, Hymn, Article, and others}
         Route::get('/resource/{id}', [IndexController::class, 'show_resource'])->name('resource');
+
+        Route::get('/scripture/{testament}/{book}/{chapter}', [IndexController::class, 'scripture_result'])->name('scripture');
         
         // contact
         Route::get('/contact', [IndexController::class, 'contact'])->name('contact');

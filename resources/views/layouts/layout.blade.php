@@ -91,15 +91,18 @@
                                 <li><a href="{{ route('about') }}">@lang('titles.who_we_are')</a></li>
                                 <li><a href="{{ route('contact') }}">@lang('titles.contact')</a></li>
                                 <li><a href="{{ route('donate') }}">@lang('titles.donate')</a></li>
-                                
-                                <form id="form" method="POST" action="{{route('search')}}">
-                                    @csrf
-                                    <div class="field">
-                                        <input type="text" placeholder="@lang('titles.search') ..." name="query"
-                                            id="search-query" class="form-control">
+                                <li>
+                                    <form id="form" method="POST" action="{{route('search')}}">
+                                        @csrf
+                                        <div class="field">
+                                            <input type="text" placeholder="@lang('titles.search') ..." name="query"
+                                                id="search-query" class="form-control">
 
-                                    </div>
-                                </form>
+                                        </div>
+                                    </form>
+                                </li>
+
+
                             </ul>
 
 
