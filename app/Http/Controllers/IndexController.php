@@ -78,25 +78,24 @@ class IndexController extends Controller
     }
 
     public function scripture_result( $testament, $book, $chapter){
-        // $result1 = DB::table('holy_bible')
-        // ->addSelect(DB::raw('data_tash'))  
-        // ->addSelect(DB::raw('sub_tit_val'))  
-        // ->addSelect(DB::raw('ch_b'))  
-        // ->where('testament_num', $testament)
-        // ->where('book_num', $book)
-        // ->where('chapter', $chapter)->get();
-        // // return $results;
+
+        // get scriptures associated with this [testament_num, book_num and chapter number] 
+        $result1 = DB::table('holy_bible')
+        ->addSelect(DB::raw('data_tash'))  
+        ->addSelect(DB::raw('sub_tit_val'))  
+        ->addSelect(DB::raw('ch_b'))  
+        ->where('testament_num', $testament)
+        ->where('book_num', $book)
+        ->where('chapter', $chapter)->get();
         
-        // $result1 = json_decode($result1, true);
-        // $res['verses'] = $result1;
-       
-
-        // $sub = DB::table('holy_bible')
-        //     ->addSelect(DB::raw('ID'))  
-        //     ->where('testament_num', $testament)
-        //     ->where('book_num', $book)
-        //     ->where('chapter', $chapter)->get();
-
+        // get all resources that cited these scriptures
+        
+        // sub query to get all the verses id of these scriptures
+        $sub = DB::table('holy_bible')
+            ->addSelect(DB::raw('ID'))  
+            ->where('testament_num', $testament)
+            ->where('book_num', $book)
+            ->where('chapter', $chapter)->get();
 
         $result2 = DB::table('product')
             -> select(['product.id', 'product.name', 'product.desc'])
@@ -113,10 +112,17 @@ class IndexController extends Controller
              
              })
             -> get();
+        
+        
+        $result1 = json_decode($result1, true);
+        $result2 = json_decode($result2, true);
 
-        return $result2;
-
-        // return view('scripture', compact('results'));
+        // combine result1 and result2 into res     
+        $res['chapter'] = $result1;
+        $res['chapter_resources'] = $result2;
+        
+        // return res
+        return view('scripture', compact('res'));
     }
 
 
