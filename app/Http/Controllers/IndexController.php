@@ -98,7 +98,7 @@ class IndexController extends Controller
             ->where('chapter', $chapter)->get();
 
         $result2 = DB::table('product')
-            -> select(['product.id', 'product.name', 'product.desc'])
+            -> select(['product.id', 'product.name', 'product.desc', 'product.created'])
             -> distinct()
             -> join('attachments', 'attachments.product_id', '=', 'product.id')
             -> whereIn('attachments.note1',function($query) use ($testament, $book, $chapter) {
@@ -113,10 +113,9 @@ class IndexController extends Controller
              })
             -> get();
         
-        
         $result1 = json_decode($result1, true);
         $result2 = json_decode($result2, true);
-
+        
         // combine result1 and result2 into res     
         $res['chapter'] = $result1;
         $res['chapter_resources'] = $result2;

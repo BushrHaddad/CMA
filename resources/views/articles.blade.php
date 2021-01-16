@@ -38,10 +38,10 @@
                     <div class="blog-entry">
                         <a href="{{route('resource',$result->id)}}" >
                             <img src="/imgs/blog-2.jpg" class="img-responsive" alt="">
-                            <div class="desc">
+                            <div class="body">
                                 <span class="date">{{ \Carbon\Carbon::parse($result->created)->format('jS F Y') }}</span>
-                                <!-- <span class="date">2020-Dec-5</span> -->
                                 <h3>{{$result->name}}</h3>
+                                <span class="desc">2020-Dec-5</span>
                             </div>
                         </a>
                     </div>

@@ -540,7 +540,8 @@ h1, h2, h3, h4, h5, h6, figure {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   width: 100%;
   float: right;
-  padding: 20px 0;
+  padding-top: 20px;
+  overflow: hidden;
 }
 #CMA-sidebar .blog-entry > a {
   width: 100%;
@@ -549,22 +550,43 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #CMA-sidebar .blog-entry > a img {
   float: right;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-#CMA-sidebar .blog-entry > a .desc {
+#CMA-sidebar .blog-entry > a .body {
   padding-top: 10px;
   padding-right: 110px;
+  height: 170px;
 }
-#CMA-sidebar .blog-entry > a .desc .date {
+#CMA-sidebar .blog-entry > a .body .date {
   color: rgba(0, 0, 0, 0.4);
 }
-#CMA-sidebar .blog-entry > a .desc h3 {
+#CMA-sidebar .blog-entry > a .body h3 {
   font-size: 20px;
+}
+#CMA-sidebar .blog-entry > a  .footer{
+  /* height: 10px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 -20px 15px -5px #fff;
+  /* border-radius: 20px; */
+  border-bottom: 1px solid rgba(0,0,0,.12); 
+  min-height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 #CMA-sidebar .category {
   margin: 0;
@@ -1967,6 +1989,18 @@ float: right;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+}
+
+.verse{
+  font-size: 1.1em;
+  line-height: 2.3em;
+  color: rgb(49, 49, 49);
+}
+.verse_title{
+  font-size: 2em;
+}
+.chapter_title{
+  font-size: 2.2em;
 }
 /* ================== End Topics Section  ========================================= */
 
